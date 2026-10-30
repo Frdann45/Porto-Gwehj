@@ -62,7 +62,7 @@ export default function Portfolio() {
               transition={{ repeat: Infinity, duration: 1.8, ease: "easeInOut" }}
               className="flex items-center gap-2 text-sm font-bold uppercase tracking-widest border-2 border-black bg-white px-4 py-2 inline-flex mb-12"
             >
-              <ArrowDown size={18} strokeWidth={3} /> Scroll 
+              <ArrowDown size={18} strokeWidth={3} /> Scroll
             </motion.div>
           </motion.div>
         </section>

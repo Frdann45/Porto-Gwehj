@@ -64,7 +64,7 @@ export default function AboutSection() {
                 Saya adalah Mahasiswa Teknik Informatika di STMIK DCI Tasikmalaya yang memiliki semangat tinggi dalam dunia kreatif dan teknologi. Adaptif, fleksibel, dan selalu siap menghadapi tantangan baru.
               </p>
               <p className="text-xl font-bold leading-relaxed">
-                Aktif dalam berbagai organisasi kemahasiswaan sebagai Social Media Specialist, dengan keahlian di bidang desain grafis, fotografi, dan pengembangan web.
+                Aktif di organisasi kemahasiswaan sebagai Pengurus UKM Fotografi dan Multimedia Amatir (FORMAT), dengan keahlian di bidang fotografi, desain grafis, dan pengembangan web.
               </p>
             </div>
 

@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence, Variants } from "framer-motion";
 import Image from "next/image";
-import { Camera, Users, GraduationCap, Film, Image as ImageIcon, X, ChevronLeft, ChevronRight } from "lucide-react";
+import { Camera, Users, GraduationCap, Film, Image as ImageIcon, ShoppingCart, X, ChevronLeft, ChevronRight } from "lucide-react";
 
 export default function ProjectSection() {
   const [lightbox, setLightbox] = useState<{ images: string[]; index: number } | null>(null);
@@ -109,6 +109,19 @@ export default function ProjectSection() {
       ]
     },
     {
+      title: "Website E-Commerce Warung Tiga Saudara",
+      client: "Warung Tiga Saudara",
+      type: "Web Development • E-Commerce",
+      tagIcon: <ShoppingCart size={14} strokeWidth={3} />,
+      description: "Merancang dan membangun platform web e-commerce bergaya Neo-Brutalism untuk Warung Tiga Saudara guna memudahkan transaksi kebutuhan harian secara daring. Dilengkapi fitur katalog produk per kategori, halaman promo bulanan, keranjang belanja, sistem checkout dengan berbagai metode pembayaran, serta panduan belanja interaktif.",
+      techStack: ["PHP", "MySQL", "HTML & CSS", "JavaScript", "E-Commerce"],
+      imagePosition: "object-top",
+      images: [
+        "/images/warung/1.webp", "/images/warung/2.webp", "/images/warung/3.webp",
+        "/images/warung/4.webp", "/images/warung/5.webp", "/images/warung/6.webp"
+      ]
+    },
+    {
       title: "Hasil Karya Lainnya",
       client: "Personal Project • Eksplorasi Visual",
       type: "Visual Art • Photography",
@@ -203,7 +216,7 @@ export default function ProjectSection() {
                         alt={`Dokumentasi ${project.title} ${i+1}`} 
                         fill
                         sizes="(max-width: 768px) 50vw, 33vw"
-                        className="object-cover grayscale hover:grayscale-0 transition-all duration-300 ease-in-out hover:scale-105"
+                        className={`object-cover ${project.imagePosition ?? "object-center"} grayscale hover:grayscale-0 transition-all duration-300 ease-in-out hover:scale-105`}
                       />
                     </div>
                   ))}
